@@ -4,7 +4,7 @@ const cheerio = require("cheerio");
 const TELEGRAM_TOKEN = process.env.TELEGRAM_TOKEN;
 const CHAT_ID = process.env.CHAT_ID;
 
-const URL = "https://example.com"; // 🔴 ton site
+const URL = "https://www.richbourse.com/common/actualite/index"; // 🔴 ton site
 
 async function sendTelegram(message) {
   await axios.post(`https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`, {
