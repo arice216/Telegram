@@ -3,6 +3,7 @@ name: Telegram Bot
 on:
   schedule:
     - cron: "*/10 * * * *"  # toutes les 10 min
+  workflow_dispatch:   # ✅ PERMET DE LANCER MANUELLEMENT
 
 jobs:
   run-bot:
