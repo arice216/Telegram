@@ -1,20 +1,20 @@
-name: Telegram Bot
+(name: Telegram Bot
 
-on:
-  schedule:
-    - cron: "*/10 * * * *"  # toutes les 10 min
-  workflow_dispatch:   # ✅ PERMET DE LANCER MANUELLEMENT
+#on:
+ # schedule:
+  #  - cron: "*/10 * * * *"  # toutes les 10 min
+  #workflow_dispatch:   # ✅ PERMET DE LANCER MANUELLEMENT
 
-jobs:
-  run-bot:
-    runs-on: ubuntu-latest
+#jobs:
+  #run-bot:
+    #runs-on: ubuntu-latest
 
-    env:
-      TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
-      CHAT_ID: ${{ secrets.CHAT_ID }}
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    #env:
+     # TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+      #CHAT_ID: ${{ secrets.CHAT_ID }}
+      #FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
-    steps:
+    #steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
